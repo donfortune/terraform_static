@@ -1,11 +1,9 @@
-provider "aws" {
-  region = var.region
-}
-
 terraform {
-  backend "s3" {
-    bucket = "terraform-state-2021"
-    key    = ".terraform/terraform.tfstate"
-    region = "eu-west-1"
-  } 
+  required_version = ">= 0.12"
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.55.0"
+    }
+  }
 }
