@@ -1,7 +1,7 @@
 variable "bucket_name" {
    
     type = string
-    #default = "count-yemi-static-bucket-24-06-24"
+    
 
 }
 

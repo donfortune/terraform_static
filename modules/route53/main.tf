@@ -41,7 +41,7 @@ resource "aws_route53_record" "static_domain" {
   zone_id = aws_route53_zone.main.zone_id
   name    = var.custom_domain
   type    = "A"
-  #ttl     = "300"
+  
 
   alias {
     name                   = module.api_gateway.invoke_url
@@ -51,7 +51,7 @@ resource "aws_route53_record" "static_domain" {
   }
 }
 
-# API Gateway base path mapping
+
 resource "aws_api_gateway_base_path_mapping" "base_path_mapping" {
 
   domain_name = aws_api_gateway_domain_name.api_domain.domain_name

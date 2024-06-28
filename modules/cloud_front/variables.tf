@@ -9,7 +9,3 @@ variable "bucket_name" {
 }
 
 
-# variable "ssl_cert" {
-#   description = "ssl certificate"
-#   type        = string
-# }

@@ -1,9 +1,9 @@
-# Define the AWS provider
+
 provider "aws" {
   region = var.region
 }
 
-# Call the S3 module
+
 module "bucket" {
   source = "./modules/bucket"
   bucket_name = var.bucket_name
