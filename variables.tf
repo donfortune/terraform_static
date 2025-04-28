@@ -17,7 +17,7 @@ variable "domain_name" {
 
 variable "cloudfront_certificate_arn" {
   
-  default = "arn:aws:acm:us-east-1:431620297255:certificate/a4286910-f6be-42ea-8db7-f5f85d8703a7"
+  default = ""
 }
 
 variable "api_name" {
